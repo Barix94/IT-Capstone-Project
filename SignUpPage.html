@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <title>Class Registration</title>
+</head>
+<body>
+    <a href="index.html" target="_self">
+    <img src="Gen Fitness.png" height="200" alt="logo">
+    </a>
+    <button style="position: absolute; top: 20px; right: 20px;">Login</button>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="Classes.html">Classes</a>
+    <a href="About Us.html">About Us</a>
+    <a href="Contact.html">Contact</a>
+    </nav>
+    <h1>Register for a Class</h1>
+
+    <form class="signup-form">
+
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- Class Selection -->
+        <label for="class">Choose a Class:</label>
+        <select id="class" name="class" required>
+            <option value="">-- Select a Class --</option>
+            <option value="Tai Chi">Tai Chi</option>
+            <option value="Beginner Boxing">Beginner Boxing</option>
+            <option value="Advanced Boxing">Advanced Boxing</option>
+            <option value="Strength Training">Strength Training</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Running with Friends">Running with Friends</option>
+        </select>
+
+        <!-- Date -->
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- Submit -->
+        <button type="submit" class="submit-btn">Register</button>
+
+    </form>
+
+</body>
+</html>
