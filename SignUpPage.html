@@ -10,7 +10,6 @@
     <a href="index.html" target="_self">
     <img src="Gen Fitness.png" height="200" alt="logo">
     </a>
-    <button style="position: absolute; top: 20px; right: 20px;">Login</button>
     <nav>
     <a href="index.html">Home</a>
     <a href="Classes.html">Classes</a>
@@ -19,7 +18,7 @@
     </nav>
     <h1>Register for a Class</h1>
 
-    <form action="https://api.web3forms.com/submit" method="POST">
+    <form class="signup-form" action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="72897081-3873-438c-a7e0-6b240364d00c">
 
         <!-- Name -->
@@ -54,6 +53,15 @@
         <button type="submit" class="submit-btn">Register</button>
 
     </form>
+    <p class="submit-comlete" id="thankYouMessage" style="display:none; font-size:20px; color:orange;">
+        Thank you for signing up! We look forward to seeing you in class.
+    </p>
 
+    <script>
+        document.querySelector(".signup-form").addEventListener("submit", function(event){
+        event.preventDefault();
+        document.getElementById("thankYouMessage").style.display = "block";
+        });
+    </script>
 </body>
 </html>
