@@ -14,17 +14,139 @@ nav a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
 nav a:hover {
     color: orange;
     text-decoration: none;
 }
+
+.submit-complete{
+    text-align: center;
+}
+.welome{
+}
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     background-color: orange;
+    border: 2px solid black;   
+    border-radius: 8px;        
+    padding: 10px; 
+}
+.home-classes{
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    height: 300px;
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 3px solid black;
+    background-color: orange;   /* orange inside the border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+.signup-btn{
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    background-color: gray;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border:2px solid black;
+    cursor: pointer;
+    width: 200px;
+    margin: 0 auto;
+}
+.button-link{
+    width: 200px;
+    text-align: center;
+    display: block;   /* makes width work */
+    margin: 0 auto;   /* centers it like your signup button */
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+.class-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.class-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: bottom 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.class-card:hover .overlay {
+    bottom: 0;
+}
+.class-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.class-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.classes-textbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px
+}
+.classes-textbox textarea {
+    width: 400px;      
+    height: 100px;     
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    resize: none;      
 }
 .signup-form {
     width: 350px;
@@ -63,4 +185,36 @@ h1{
 
 .submit-btn:hover {
     background-color: darkorange;
+}
+.about-us{
+    width: 800px;          
+    margin: 0 auto;        
+    border: 2px solid black;
+    padding: 15px;         
+    text-align: left;      
+    border-radius: 8px;    
+    background-color: orange;
+    height:auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+.contact-info{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    width: 500px;          
+    margin: 0 auto;        
+    border: 2px solid black;
+    padding: 15px;         
+    text-align: left;      
+    border-radius: 8px;   
+    background-color: orange;
+}
+
+.map-location{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 600px;
+    height: 450px;
+    border: 0;
+            
 }
