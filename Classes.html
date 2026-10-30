@@ -97,7 +97,12 @@
     <a href="SignUpPage.html" class="button-link">Signup</a>
     </div>
     <div class="classes-textbox">
-        <textarea placeholder="Please leave feedback or future class suggestions!"></textarea>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="84d5acec-13ad-475f-93ea-9f289d4155c1">
+        <textarea name="feedback" placeholder="Please leave feedback or future class suggestions!" required></textarea>
+        <br>
+        <button type="submit" class="signup-btn">Submit Feedback</button>
+        </form>
     </div>
     
 </body>
